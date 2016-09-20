@@ -18,7 +18,7 @@ RUN pacman --noconfirm --needed -S \
 RUN pacman --noconfirm --needed -S \
   boost \
   jansson \
-  nspr
+  nspr \
   pandoc \
   qt4 \
   eigen \
