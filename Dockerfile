@@ -1,4 +1,4 @@
-FROM vcatechnology/arch:latest
+FROM vcatechnology/arch-ci:latest
 MAINTAINER VCA Technology <developers@vcatechnology.com>
 
 RUN pacman -Sy && pacman-key --init && pacman-key --populate archlinux
