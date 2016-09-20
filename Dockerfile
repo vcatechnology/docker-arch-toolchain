@@ -50,7 +50,8 @@ RUN pacman --noconfirm --needed -S \
 RUN pacman --noconfirm --needed -S \
   libsigc++ \
   systemd-sysvcompat \
-  dialog
+  dialog \
+  npm
 
 RUN pacman --noconfirm --needed -S \
   alsa-utils \
