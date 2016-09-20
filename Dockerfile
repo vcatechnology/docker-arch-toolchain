@@ -32,36 +32,29 @@ RUN pacman --noconfirm --needed -S \
   gsoap \
   tinyxml \
   patch \
-  nspr
+  doxygen
 
 RUN pacman --noconfirm --needed -S \
+  autoconf \
   intltool \
   libsoup \
-  gstreamer \
-  nspr
-
+  gstreamer
  
 RUN pacman --noconfirm --needed -S \
   gst-plugins-base \
   gst-plugins-good \
   gst-plugins-bad \
   gst-plugins-ugly \
-  gst-libav \
-  nspr
+  gst-libav
 
 RUN pacman --noconfirm --needed -S \
   libsigc++ \
   systemd-sysvcompat \
-  dialog \
-  nspr
+  dialog
 
 RUN pacman --noconfirm --needed -S \
   alsa-utils \
   libuv \
-  libnl \
-  nspr 
-
-RUN pacman --noconfirm --needed -S \
   libndp \
   nodejs \
-  npm
+  libnl
