@@ -2,6 +2,7 @@ FROM vcatechnology/arch-ci:latest
 MAINTAINER VCA Technology <developers@vcatechnology.com>
 
 RUN pacman --noconfirm --needed -S \
+  python-pip \
   gcc \
   pkg-config \
   openssh \
@@ -45,3 +46,5 @@ RUN pacman --noconfirm --needed -S \
   libndp \
   nodejs \
   libnl
+
+RUN pip install --user pystache requests pytz
