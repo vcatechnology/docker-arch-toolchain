@@ -1,8 +1,6 @@
 FROM vcatechnology/arch-ci:latest
 MAINTAINER VCA Technology <developers@vcatechnology.com>
 
-RUN pacman -Sy && pacman-key --init && pacman-key --populate archlinux
-
 RUN pacman --noconfirm --needed -S \
   gcc \
   pkg-config \
@@ -13,9 +11,7 @@ RUN pacman --noconfirm --needed -S \
   valgrind \
   cppcheck \
   cppunit \
-  protobuf 
-
-RUN pacman --noconfirm --needed -S \
+  protobuf \ 
   boost \
   jansson \
   nspr \
@@ -23,37 +19,27 @@ RUN pacman --noconfirm --needed -S \
   qt4 \
   eigen \
   ffmpeg \
-  nspr  
- 
-RUN pacman --noconfirm --needed -S \
+  nspr \ 
   yasm \
   opencv \
   nasm \
   gsoap \
   tinyxml \
   patch \
-  doxygen
-
-RUN pacman --noconfirm --needed -S \
+  doxygen \
   autoconf \
   intltool \
   libsoup \
-  gstreamer
- 
-RUN pacman --noconfirm --needed -S \
+  gstreame \r
   gst-plugins-base \
   gst-plugins-good \
   gst-plugins-bad \
   gst-plugins-ugly \
-  gst-libav
-
-RUN pacman --noconfirm --needed -S \
+  gst-libav \
   libsigc++ \
   systemd-sysvcompat \
   dialog \
-  npm
-
-RUN pacman --noconfirm --needed -S \
+  npm \
   alsa-utils \
   libuv \
   libndp \
