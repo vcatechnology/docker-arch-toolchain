@@ -30,7 +30,7 @@ RUN pacman --noconfirm --needed -S \
   autoconf \
   intltool \
   libsoup \
-  gstreame \r
+  gstreamer \
   gst-plugins-base \
   gst-plugins-good \
   gst-plugins-bad \
