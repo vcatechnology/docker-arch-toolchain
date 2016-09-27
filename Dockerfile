@@ -1,7 +1,7 @@
 FROM vcatechnology/arch-ci:latest
 MAINTAINER VCA Technology <developers@vcatechnology.com>
 
-RUN pacman --noconfirm --needed -S \
+RUN sudo pacman --noconfirm --needed -S \
   python-pip \
   gcc \
   pkg-config \
@@ -47,4 +47,4 @@ RUN pacman --noconfirm --needed -S \
   nodejs \
   libnl
 
-RUN pip install --user pystache requests pytz
+RUN sudo pip install --user pystache requests pytz
