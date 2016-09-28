@@ -47,4 +47,4 @@ RUN sudo pacman --noconfirm --needed -S \
   nodejs \
   libnl
 
-RUN sudo pip install --user pystache requests pytz
+RUN pip install pystache requests pytz
