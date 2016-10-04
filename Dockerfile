@@ -48,4 +48,5 @@ RUN sudo pacman --noconfirm --needed -S \
   libnl
 
 RUN sudo pip install pystache requests pytz
+RUN mkdir /builds && chown -R buildslave:buildslave /builds && chmod 777 /builds
 USER buildslave
