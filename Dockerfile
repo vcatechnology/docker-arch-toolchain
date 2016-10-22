@@ -49,6 +49,8 @@ RUN sudo pacman --noconfirm --needed -S \
   flex \
   bison \
   python-requests \
-  python-pytz
+  python-pytz \
+  python-sphinx \
+  python-sphinx_rtd_theme
 
 RUN sudo pip install pystache
