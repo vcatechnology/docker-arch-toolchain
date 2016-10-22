@@ -47,6 +47,8 @@ RUN sudo pacman --noconfirm --needed -S \
   nodejs \
   libnl \
   flex \
-  bison
+  bison \
+  python-requests \
+  python-pytz
 
-RUN sudo pip install pystache requests pytz
+RUN sudo pip install pystache
