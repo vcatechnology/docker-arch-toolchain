@@ -51,6 +51,7 @@ RUN sudo pacman --noconfirm --needed -S \
   python-requests \
   python-pytz \
   python-sphinx \
-  python-sphinx_rtd_theme
+  python-sphinx_rtd_theme \
+  python2
 
 RUN sudo pip install pystache
