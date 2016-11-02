@@ -55,4 +55,4 @@ RUN sudo pacman --noconfirm --needed -S \
   python2 \
   unrar
 
-RUN sudo pip install pystache
+RUN sudo pip install pystache cpplint
