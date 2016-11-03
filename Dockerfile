@@ -53,6 +53,9 @@ RUN sudo pacman --noconfirm --needed -S \
   python-sphinx \
   python-sphinx_rtd_theme \
   python2 \
-  unrar
+  unrar \
+  llvm \
+  clang \
+  clang-tools-extra
 
 RUN sudo pip install pystache cpplint
