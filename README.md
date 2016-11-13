@@ -4,7 +4,7 @@
 
 This container derives from
 [vcatechnology/arch-ci](https://hub.docker.com/r/vcatechnology/arch-ci) so that the
-image has the latest [Arch Linux](https://www.linuxmint.com/) packages. It then
+image has the latest [Arch Linux](https://www.archlinux.org/) packages. It then
 installs the some useful packages for building projects with the
 [VCA Tool Chain](https://gitlab.vcatechnology.com/tool-chain/tool-chain).
 
