@@ -29,7 +29,7 @@ RUN sudo vca-install-package \
   valgrind \
   cppcheck \
   cppunit \
-  protobuf \ 
+  protobuf \
   boost \
   jansson \
   nspr \
@@ -37,7 +37,7 @@ RUN sudo vca-install-package \
   qt4 \
   eigen \
   ffmpeg \
-  nspr \ 
+  nspr \
   yasm \
   opencv \
   nasm \
@@ -75,4 +75,4 @@ RUN sudo vca-install-package \
   clang \
   clang-tools-extra
 
-RUN sudo pip install pystache cpplint
+RUN pip install --user pystache cpplint sseclient
