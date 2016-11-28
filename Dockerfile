@@ -73,6 +73,7 @@ RUN sudo vca-install-package \
   unrar \
   llvm \
   clang \
-  clang-tools-extra
+  clang-tools-extra \
+  perl
 
 RUN pip install --user pystache cpplint sseclient
