@@ -77,3 +77,4 @@ RUN sudo vca-install-package \
   perl
 
 RUN pip install --user pystache cpplint sseclient
+ENV PATH $PATH:/usr/bin/core_perl
