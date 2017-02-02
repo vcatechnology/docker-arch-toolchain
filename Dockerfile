@@ -65,6 +65,7 @@ RUN sudo vca-install-package \
   libnl \
   flex \
   bison \
+  python-coverage \
   python-requests \
   python-pytz \
   python-sphinx \
