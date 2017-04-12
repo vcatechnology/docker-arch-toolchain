@@ -75,7 +75,15 @@ RUN sudo vca-install-package \
   llvm \
   clang \
   clang-tools-extra \
-  perl
+  perl \
+  vde2 \
+  qemu-arch-extra \
+  libcap-ng \
+  bc \
+  gperf \
+  gnu-efi-libs \
+  gptfdisk \
+  stress
 
 RUN pip install --user pystache cpplint sseclient
 ENV PATH $PATH:/usr/bin/core_perl
