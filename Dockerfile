@@ -19,71 +19,71 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 # Install the packages needed for the VCA tool chain
 RUN sudo vca-install-package \
-  python-pip \
-  gcc \
-  pkg-config \
-  openssh \
-  p7zip \
-  graphviz \
+  alsa-utils \
+  autoconf \
+  bc \
+  bison \
+  boost \
   check \
-  valgrind \
+  clang \
+  clang-tools-extra \
   cppcheck \
   cppunit \
-  protobuf \
-  boost \
-  jansson \
-  nspr \
-  pandoc \
-  qt4 \
+  dialog \
+  doxygen \
   eigen \
   ffmpeg \
-  nspr \
-  yasm \
-  opencv \
-  nasm \
+  flex \
+  gcc \
+  gnu-efi-libs \
+  gperf \
+  gptfdisk \
+  graphviz \
   gsoap \
-  tinyxml \
-  patch \
-  doxygen \
-  autoconf \
-  intltool \
-  libsoup \
-  gstreamer \
+  gst-libav \
+  gst-plugins-bad \
   gst-plugins-base \
   gst-plugins-good \
-  gst-plugins-bad \
   gst-plugins-ugly \
-  gst-libav \
-  libsigc++ \
-  systemd-sysvcompat \
-  dialog \
-  npm \
-  alsa-utils \
-  libuv \
+  gstreamer \
+  intltool \
+  jansson \
+  libcap-ng \
   libndp \
-  nodejs \
   libnl \
-  flex \
-  bison \
+  libsigc++ \
+  libsoup \
+  libuv \
+  llvm \
+  nasm \
+  nodejs \
+  npm \
+  nspr \
+  nspr \
+  opencv \
+  openssh \
+  p7zip \
+  pandoc \
+  patch \
+  perl \
+  pkg-config \
+  protobuf \
   python-coverage \
-  python-requests \
+  python-pip \
   python-pytz \
+  python-requests \
   python-sphinx \
   python-sphinx_rtd_theme \
   python2 \
-  unrar \
-  llvm \
-  clang \
-  clang-tools-extra \
-  perl \
-  vde2 \
   qemu-arch-extra \
-  libcap-ng \
-  bc \
-  gperf \
-  gnu-efi-libs \
-  gptfdisk \
-  stress
+  qt4 \
+  stress \
+  systemd-sysvcompat \
+  tinyxml \
+  unrar \
+  valgrind \
+  vde2 \
+  yasm
 
 RUN pip install --user pystache cpplint sseclient
 ENV PATH $PATH:/usr/bin/core_perl
