@@ -18,34 +18,75 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.schema-version="1.0"
 
 # Install the packages needed for the VCA tool chain
+RUN sudo vca-install-package  \
+  gcc
+
 RUN sudo vca-install-package \
-  alsa-utils \
+  clang \
+  clang-tools-extra \
+  llvm
+
+RUN sudo vca-install-package \
   autoconf \
   bc \
   bison \
-  boost \
   check \
-  clang \
-  clang-tools-extra \
-  cppcheck \
   cppunit \
   dialog \
+  flex \
+  nasm \
+  openssh \
+  patch \
+  pkg-config \
+  yasm
+
+RUN sudo vca-install-package \
+  gst-plugins-bad \
+  gst-plugins-base \
+  gst-plugins-good \
+  gst-plugins-ugly \
+  gst-libav \
+  gstreamer
+
+RUN sudo vca-install-package \
+  boost
+
+RUN sudo vca-install-package \
+  perl
+
+RUN sudo vca-install-package \
+  python2 \
+  python
+
+RUN sudo vca-install-package \
+  opencv
+
+RUN sudo vca-install-package \
+  qemu-arch-extra \
+  vde2
+
+RUN sudo vca-install-package \
+  python-coverage \
+  python-pip \
+  python-pytz \
+  python-requests \
+  python-sphinx \
+  python-sphinx_rtd_theme
+
+RUN sudo vca-install-package \
+  nodejs \
+  npm
+
+RUN sudo vca-install-package \
+  alsa-utils \
   doxygen \
   eigen \
   ffmpeg \
-  flex \
-  gcc \
   gnu-efi-libs \
   gperf \
   gptfdisk \
   graphviz \
   gsoap \
-  gst-libav \
-  gst-plugins-bad \
-  gst-plugins-base \
-  gst-plugins-good \
-  gst-plugins-ugly \
-  gstreamer \
   intltool \
   jansson \
   libcap-ng \
@@ -54,36 +95,14 @@ RUN sudo vca-install-package \
   libsigc++ \
   libsoup \
   libuv \
-  llvm \
-  nasm \
-  nodejs \
-  npm \
   nspr \
-  nspr \
-  opencv \
-  openssh \
   p7zip \
   pandoc \
-  patch \
-  perl \
-  pkg-config \
-  protobuf \
-  python-coverage \
-  python-pip \
-  python-pytz \
-  python-requests \
-  python-sphinx \
-  python-sphinx_rtd_theme \
-  python2 \
-  qemu-arch-extra \
-  qt4 \
   stress \
   systemd-sysvcompat \
   tinyxml \
   unrar \
-  valgrind \
-  vde2 \
-  yasm
+  valgrind
 
 RUN pip install --user pystache cpplint sseclient
 ENV PATH $PATH:/usr/bin/core_perl
