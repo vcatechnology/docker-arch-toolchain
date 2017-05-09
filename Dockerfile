@@ -81,6 +81,7 @@ RUN sudo vca-install-package \
   alsa-utils \
   doxygen \
   eigen \
+  libelf \
   ffmpeg \
   gnu-efi-libs \
   gperf \
