@@ -105,5 +105,5 @@ RUN sudo vca-install-package \
   unrar \
   valgrind
 
-RUN pip install --user pystache cpplint sseclient
+RUN pip install --user pystache cpplint sseclient semver
 ENV PATH $PATH:/usr/bin/core_perl
