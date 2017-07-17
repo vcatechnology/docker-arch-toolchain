@@ -66,7 +66,6 @@ RUN sudo vca-install-package \
   vde2
 
 RUN sudo vca-install-package \
-  python-coverage \
   python-pip \
   python-pytz \
   python-requests \
@@ -105,5 +104,5 @@ RUN sudo vca-install-package \
   unrar \
   valgrind
 
-RUN pip install --user pystache cpplint sseclient semver
+RUN pip install --user pystache cpplint sseclient semver coverage
 ENV PATH $PATH:/usr/bin/core_perl
