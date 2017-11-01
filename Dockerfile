@@ -28,12 +28,16 @@ RUN sudo vca-install-package \
   clang \
   clang-tools-extra \
   cppunit \
+  dfu-util \
   dialog \
+  dnsmasq \
+  dosfstools \
   doxygen \
   eigen \
   ffmpeg \
   flex \
   gcc \
+  gdb \
   gnu-efi-libs \
   gperf \
   gptfdisk \
@@ -45,8 +49,10 @@ RUN sudo vca-install-package \
   gst-plugins-good \
   gst-plugins-ugly \
   gstreamer \
+  gstreamer-vaapi \
   intltool \
   jansson \
+  js185 \
   libcap-ng \
   libelf \
   libndp \
@@ -56,6 +62,7 @@ RUN sudo vca-install-package \
   libuv \
   llvm \
   nasm \
+  networkmanager \
   nodejs \
   npm \
   nspr \
@@ -66,6 +73,7 @@ RUN sudo vca-install-package \
   patch \
   perl \
   pkg-config \
+  protobuf \
   python \
   python-pip \
   python-pytz \
