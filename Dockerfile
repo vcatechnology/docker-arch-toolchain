@@ -66,7 +66,7 @@ RUN sudo vca-install-package \
   nodejs \
   npm \
   nspr \
-  opencv
+  opencv \
   openssh \
   p7zip \
   pandoc \
@@ -79,7 +79,7 @@ RUN sudo vca-install-package \
   python-pytz \
   python-requests \
   python-sphinx \
-  python-sphinx_rtd_theme
+  python-sphinx_rtd_theme \
   python2 \
   qemu-arch-extra \
   stress \
