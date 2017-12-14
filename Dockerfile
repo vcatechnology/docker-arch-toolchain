@@ -90,5 +90,5 @@ RUN sudo vca-install-package \
   vde2 \
   yasm
 
-RUN pip install --user pystache cpplint sseclient semver coverage
+RUN pip install --user pystache cpplint sseclient semver coverage python-gitlab
 ENV PATH $PATH:/usr/bin/core_perl
